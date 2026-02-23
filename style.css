@@ -1,0 +1,256 @@
+/*configurações gerais*/
+
+:root {
+
+    /*utlizando variáveis simplificadas para substituir as paletas de cores e fontes usadas no projeto "var(--cor-exemplo);" */
+
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-tercearia: #22d4fd;
+
+    --fonte-primaria: 'krona one', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif; 
+}
+
+/*Usado para remover configurações de navegadores próprios e não alterar as configs usadas pelo desenvolvedor*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #030303;
+    color: #ffffff;
+}
+
+.cabecalho {
+    background-color: #000000;
+    padding: 2% 0% 0.5% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 90px;
+
+}
+
+.cabecalho__menu__links {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cabecalho__menu__links:hover {
+    background-color: #0c60fc;
+    
+}
+
+.apresentacao {
+    padding: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--fonte-secundaria);
+}
+
+.caixa_de_texto {
+    margin-bottom: 4%;
+    width: 700px;
+    gap: 38px;
+}
+
+strong {
+    color: var(--cor-tercearia);
+}
+
+.titulo-destaque {
+    font-family: 'Krona One', sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    width: 800px;
+    color: #ffffff;
+    margin: 4% 0;
+}
+
+.subtitulo {
+    color:#2dffff;
+    margin: 4%;
+    font-weight: 600;
+    font-size: 34px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo {
+    width: auto;
+    margin-bottom: 5px;
+    gap: 36px;
+}
+
+.apresentacao__conteudo__texto {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    gap: 38px;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 3px solid #2b1cff;
+    width: 380px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 18.5px 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #032C59;
+}
+
+.rodape {
+    font-family: 'Montserat' , sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding: 24px;
+    background-color: #032C59;
+    color: #f8f8fa;
+}
+
+/*Configurações de css da segunda página(sobre mim)*/ 
+
+.apresentacao__sobre__mim {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.caixa_de_texto__sobre__mim {
+    font-family: var(--fonte-secundaria);
+    font-size: 28px;
+    font-weight: 600;
+    width: 600;
+    gap: 34px;
+}
+
+.apresentacao__conteudo__sobre__mim {
+    font-family: var(--fonte-secundaria);
+    font-size: 38px;
+    width: 600;
+    margin-bottom: 5px;
+    gap: 36px;
+    color: #2dffff;
+}
+
+li {
+
+    margin: 20px;
+
+}
+
+.lista__sobre__mim {
+    font-size: 18px;
+    font-family: var(--fonte-secundaria);
+    margin: 10px;
+    
+}
+
+.titulo-destaque__sobre__mim {
+    font-family: var(--fonte-primaria);
+    font-size: 56px;
+    color:#2dffff;
+    gap: 36px;
+    margin: 0% 0 20% 0;
+}
+
+/*Configurações de css da segunda página(sobre consiga)*/ 
+
+.titulo-destaque__sobre__consiga {
+    font-family: var(--fonte-primaria);
+    font-size: 56px;
+    color:#2dffff;
+    gap: 36px;
+    margin: 0% 0 20% 0;
+}
+
+.apresentacao__sobre__consiga {
+    padding: 4% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+}
+
+.caixa_de_texto__sobre__consiga {
+    font-family: var(--fonte-secundaria);
+    font-size: 22px;
+    font-weight: 600;
+    width: 600;
+    gap: 34px;
+}
+
+.apresentacao__conteudo__sobre__consiga {
+    font-family: var(--fonte-secundaria);
+    font-size: 38px;
+    width: 600;
+    margin-bottom: 5px;
+    gap: 36px;
+    color: #2dffff;
+}
+
+.apresentacao__conteudo__texto__sobre__consiga {
+    font-size: 18px;
+    width: 600;
+    font-family: var(--fonte-secundaria);
+    margin: 0px 20px 10px 0px;
+    gap: 34px;
+}
+
+.lista__sobre__consiga {
+    font-size: 28px;
+    font-family: var(--fonte-secundaria);
+    margin: 10px;
+    
+}
+
+.titulo-destaque__sobre__consiga {
+    font-family: var(--fonte-primaria);
+    font-size: 48px;
+    color:#2dffff;
+    width: 600;
+    gap: 36px;
+    margin: 0% 10% 10% 0;
+}
+
+.rodape__sobre__consiga {
+    font-family: var(--fonte-secundaria);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding: 24px;
+    background-color: #032C59;
+    color: #f8f8fa;
+
+}
